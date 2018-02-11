@@ -1,0 +1,35 @@
+title: Nell's IT Blog
+description: > # this means to ignore newlines until "baseurl:"
+  This is to share my experiences to the world as I navigate through the wonderful world of Software development.
+permalink: ':title/'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
+
+# Author Settings
+author: Marinell Medina # add your name
+author-img: nell-medina.jpg # add your photo
+about-author: I'm a Software Developer fascinated with Java, JHipster Microservices, Docker, Angular and Nodejs.
+twitter: marinellmedina # add your Twitter handle
+facebook: # add your Facebook handle
+github: nellmedina # add your Github handle
+linkedin: nellmedina # add your Linkedin handle
+email: marinellmedina1@gmail.com
+
+# Disqus
+discus-identifier: nellmedina # add your discus identifier
+
+# Tracker
+analytics: # Google Analytics
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
