@@ -7,9 +7,9 @@ img: graphql_img.png
 tags: [GraphQL, Spring Boot]
 ---
 
-The `REST` architecture is the most popular way to expose data through an `API`. But a better solution that REST can be GraphQL which was open-sourced by Facebook on 2015 and released as a specification. GraphQL is a query language that offers an alternative model to developing APIs using a strong type system to provide a detailed description of an API.
+The `REST` architecture is the most popular way to expose data through an `API`. But a better solution can be GraphQL which was open-sourced by Facebook on 2015 and released as a specification. GraphQL is a query language that offers an alternative model to developing APIs using a strong `type` system to provide a detailed description of an API.
 
-A sample GraphQL using Spring Boot is [here](https://github.com/nellmedina/graphql-spring-boot).
+A sample GraphQL project using Spring Boot is [here](https://github.com/nellmedina/graphql-spring-boot).
 
 #### Java support to GraphQL specification using Spring Boot.
 
@@ -65,7 +65,7 @@ To make above dependencies work better for Spring boot, use below combination fo
 <!-- to embed GraphiQL tool -->
 {% endhighlight %}
 
-These Spring Boot dependencies support for GraphQL can be configured on `application.properties` or `application.yml`.
+These Spring Boot dependencies support for GraphQL can be configured at `application.properties` or `application.yml`.
 
 {% highlight yml %}
 server:
@@ -86,7 +86,7 @@ graphql:
        corsEnabled: true
 {% endhighlight %}
 
-Using Postman or Curl for your queries can be very inconvenient so best practice is to make use of the built-in GraphQL client which was under `graphiql-spring-boot-starter`. And, from above yml configuration, the built-in GraphQL client can be located at http://localhost:9978/graphql-client. But using Postman or Curl, the location is http://localhost:9978/graphql-api.
+Using Postman or Curl for your queries can be very inconvenient so best practice is to make use of the built-in GraphQL client which was under `graphiql-spring-boot-starter`. This dependency provides GraphQL client in the browser by using http://localhost:9978/graphql-client. For Postman, curl or Apollo client can use http://localhost:9978/graphql-api.
 
 #### Using Postman
 
